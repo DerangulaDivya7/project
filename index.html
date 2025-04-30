@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+  header {
+      
+      background-color:black;
+     width:100%;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .search-bar {
+      margin-bottom: 15px;
+    }
+    .search-bar input[type="text"] {
+      width: 50%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+    }
+    .logo-links {
+h1{
+color:white;
+}
+      display: flex;
+      justify-content: flex-start; /* left side */
+      align-items: center;
+      padding: 0px;
+      gap: 20px;
+    }
+    .logo-links img {
+      width: 400px;
+      height: 200px;
+    }
+    .logo-links a {
+      text-decoration: none;
+      text-align:right;
+      color: #333;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .logo-links a:hover {
+      color: #28a745;
+    }
+
+    .slider {
+      width: 80%;
+      margin: 50px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .slides {
+      display: flex;
+      width: 500%;
+      animation: slide 10s infinite;
+    }
+    .slides img {
+      width: 80%;
+      height: 900px;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      0% { margin-left: 0%; }
+      20% { margin-left: 0%; }
+      25% { margin-left: -100%; }
+      45% { margin-left: -100%; }
+      50% { margin-left: -200%; }
+      70% { margin-left: -200%; }
+      75% { margin-left: -300%; }
+      95% { margin-left: -300%; }
+      100% { margin-left: -400%; }
+    }
+body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 30px;
+     background-image:" https://img.freepik.com/free-vector/abstract-bright-gradient-background-minimal-style_1017-51545.jpg?semt=ais_hybrid&w=740";
+   
+ }
+    .product-gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .product-gallery img {
+      width: 90%;
+      height:900px;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: 0.3s;
+padding:10px;
+    }
+    .product-gallery img:hover {
+      transform: scale(1.05);
+      opacity: 0.8;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 2;
+      padding-top: 50px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: white;
+    }
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 60%;
+      max-width: 700px;
+    }
+    .modal-details {
+      color: black;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .stars {
+      color: gold;
+      font-size: 50px;
+      margin: 10px 0;
+    }
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .buy-button, button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .buy-button:hover, button:hover {
+      background-color: #218838;
+    }
+    input, textarea {
+      width: 300px;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .hidden {
+      display: none;
+    }
+    .thankyou-icon {
+      font-size: 100px;
+      color: green;
+      margin-bottom: 20px;
+    }
+
+
+    footer{
+    height:500px;
+}
+h1{
+margin-left:300px;
+}{
+  .card {
+      width: 80%;
+      margin: 50px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .carder {
+      display: flex;
+      width: 500%;
+      animation: slide 10s infinite;
+    }
+    .carder img {
+      width: 80%;
+      height: 900px;
+      object-fit: cover;
+    }
+    @keyframes slide {
+      0% { margin-left: 0%; }
+      20% { margin-left: 0%; }
+      25% { margin-left: -100%; }
+      45% { margin-left: -100%; }
+      50% { margin-left: -200%; }
+      70% { margin-left: -200%; }
+      75% { margin-left: -300%; }
+      95% { margin-left: -300%; }
+      100% { margin-left: -400%; }
+    }
+
+
+ </style>
+
+   
+
+<body >
+
+
+<header>
+<!-- Search Bar -->
+  <div class="search-bar">
+    <input style="height:40px;width:80%;font-size:30px;" type="text" placeholder="Search for products">
+  </div>
+
+  <!-- Logo and Links -->
+  <div class="logo-links">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJb0epy1JeSD8DgHLZYWGI1Rf9gwYB-HH8pQ&s" >
+   <h1>Home</h1>&nbsp
+    <h1>About</h1>
+     <h1>product</h1>
+    <h1>Catagories</h1>
+   &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp <img style="justify-content:right" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7SJ6B1YJMp5tzkTf30rk1_vOb0tBE1Pa2aZQ6shDnlTfn_lNehAsYKxbVdU2qVCRw_yw&usqp=CAU" >
+  </div>
+
+  
+    </header>
+    
+<br>
+
+<div class="slider">
+  <div class="slides">
+    <img src="https://images.vexels.com/content/194698/preview/shop-online-slider-template-4f2c60.png" alt="Slide 1">
+    <img src="https://img.freepik.com/premium-vector/modern-sale-banner-website-slider-template-design_54925-46.jpg" alt="Slide 2">
+<img src="https://media.istockphoto.com/id/1471990929/vector/special-offer-banner-mega-sale-off-store-poster-sticker-vector.jpg?s=612x612&w=0&k=20&c=OH8s5-naQZqffl7t11snXxUBVNcSqMFjkr-b8oICsBI=" alt="Slide 3">
+    <img src="https://navbharattimes.indiatimes.com/thumb/115967643/electric-blanket-price-115967643.jpg?imgsize=1386518&width=1600&height=900&resizemode=75" alt="Slide 4">
+    <img src="https://www.jiomart.com/images/product/original/rvmzdr6dbe/bell-electric-blankets-for-single-bed-heating-bed-warmer-with-4-heat-settings-heating-blanket-with-low-power-consumption-multicolor-product-images-orvmzdr6dbe-p609623823-0-202407310035.jpg?im=Resize=(420,420)" alt="Slide 5">
+  </div>
+</div>
+<!-- Product Gallery -->
+  
+    <div id="productSection">
+    <h1 style="background-color:lightpink;padding:30px;width:85%;margin-right:60px;font-size:50px">BIG DHAMAKA SALE</h1>
+    <div class="product-gallery">
+      <img class="product-image" src="https://m.media-amazon.com/images/I/718zdsU--AL._AC_UF894,1000_QL80_.jpg" alt="Product 1" data-price="₹1999" data-reviews="4.5/5 (120 reviews)">
+   </div>  
+  </div>
+
+ <!-- Address Form -->
+  <div id="addressSection" class="hidden">
+    <h1 style="background-color:lightpink;padding:30px;margin-right:60px;width:85%;font-size:50px;">Enter Your Address</h1>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Full Name" required><br>
+      <input type="text" placeholder="Phone Number" required><br>
+      <textarea placeholder="Address" rows="4" required></textarea><br>
+      <button type="submit">confirm</button>
+    </form>
+  </div>
+
+  <!-- Thank You Message -->
+  <div id="thankYouSection" class="hidden">
+    <div class="thankyou-icon">✔</div>
+    <h1>Thank you for shopping!</h1>
+    <h1>You saved ₹9999!</h1>
+  </div>
+
+  <!-- Modal Popup -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div class="modal-details">
+     <h1 style="margin-left:0px"> </h1>
+
+    <h1 style="font-size:90px">Bed warmer pindia electric electric blanket </h1>
+    <img src="https://i.ebayimg.com/images/g/6eQAAOSw5Uhnhv0a/s-l400.png" alt="Slide 1">
+    <img src="https://i.ebayimg.com/images/g/DhEAAOSwto1kEWaP/s-l400.jpg" alt="Slide 2">
+<img src="https://media.currys.biz/i/currysprod/10264398_001?$l-large$&fmt=auto" alt="Slide 2">
+      <h1 id="priceText">Price: </h1>
+
+      <div style="text-size:200px;padding:50px;"class="stars">⭐⭐⭐⭐⭐</div>
+      <p id="reviewText"></p></div>
+      <button class="buy-button" onclick="buyNow()">Buy Now</button>
+    </div>
+  </div>
+
+  <script>
+    // Modal functionality
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    var closeBtn = document.getElementsByClassName("close")[0];
+    var priceText = document.getElementById("priceText");
+    var reviewText = document.getElementById("reviewText");
+
+    // Attach click to all product images
+    var products = document.getElementsByClassName("product-image");
+    for (let i = 0; i < products.length; i++) {
+      products[i].onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        priceText.innerText = "Price: " + this.getAttribute("data-price");
+        reviewText.innerText = this.getAttribute("data-reviews");
+      }
+    }
+
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    // Buy Now button inside modal
+    function buyNow() {
+      modal.style.display = "none";
+      document.getElementById('productSection').style.display = 'none';
+      document.getElementById('addressSection').style.display = 'block';
+    }
+
+    // Submit address form
+    function submitForm(event) {
+      event.preventDefault();
+      document.getElementById('addressSection').style.display = 'none';
+      document.getElementById('thankYouSection').style.display = 'block';
+    }
+  </script>
+
+</body>
+<footer style="background-color: #333; color: white; padding: 20px; text-align: center;">
+<pre>                                                                                                                                             <label style="font-size:50px;"for="email">Email:</label><br>
+                                                                                                                                                             <input type="email" id="email" placeholder="enter your email" name="email" required><br><br></pre>      
+                                                                                                                                                            
+    <div style="display: flex; justify-content: center; align-items: center; gap: 40px;">
+        <!-- First image with caption -->
+        <div style="text-align: center;">
+            <img src="https://images.indianexpress.com/2024/02/YouTube-YouTube-1.jpg" alt="Image 1" style="width:100px;">
+            <h2 style="margin-top: 50px;padding:10px;">Home</h2>
+            <h2>Contact us</h2>
+        </div>
+
+        <!-- Second image with caption -->
+        <div style="text-align: center;">
+            <img src="https://i.pinimg.com/564x/00/65/f6/0065f63eaba18602b4e59c886c0ebcc6.jpg" alt="Image 2" style="width:60px;">
+           <h2 style="margin-top: 50px;color:white;padding:8px;">About</h2>
+            <h2>Getstarted</h2>
+        </div>
+
+        <!-- Third image with caption -->
+        <div style="text-align: center;">
+            <img src="https://i.pinimg.com/736x/21/d6/7f/21d67f1d6b3be5bb2e39395311c77fc6.jpg" alt="Image 3" style="width:60px;">
+            <h2 style="margin-top: 50px;color:white">Products</h2>
+              <h2>Purchase</h2>
+        </div>
+<div style="text-align: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGI_gn-XI142fFpKBfQ28uG5P43Zjkod8YDg&s" alt="Image 3" style="width:100px;height:50px;">
+            <h2 style="margin-top: 60px;color:white">Account</h2>
+            <h2>Profile</h2>
+        </div>
+    </div>
+
+    <!-- Footer text below all images -->
+    <div style="margin-top: 30px;">
+        <p style="font-size:30px"text-size:100px;color:white;">&copy; 2025 UrbanCart. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>
